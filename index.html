@@ -1,64 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Photo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="ZYNfZwMUiNwSMF3EMvY85bid2BVvB12uMMRfUNWw75A"
-    />
-    <meta
-      name="keywords"
-      content="Eki, Eki Zulfar,Eki Zulfar Rachman, siapa Eki, Eki adalah , Siapa Eki Zulfar , ekizr"
-    />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta
-      name="title"
-      content="Eki Zulfar Rachman - Profil Pengembang Front-End Web"
-    />
-    <meta
-      name="description"
-      content="Selamat datang di website saya! Saya adalah Eki Zulfar Rachman, atau panggil saja saya 'EKI.' Saya adalah seorang pengembang web dengan fokus pada menciptakan antarmuka pengguna yang menarik dan responsif. Temukan lebih banyak tentang karya-karya saya di sini"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarence Buenaflor - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Clarence Buenaflor</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://eki.my.id/" />
-    <meta
-      property="og:title"
-      content="Eki Zulfar Rachman - Profil Pengembang Front-End Web"
-    />
-    <meta
-      property="og:description"
-      content="Selamat datang di website saya! Saya adalah Eki Zulfar Rachman, atau panggil saja saya 'EKI.' Saya adalah seorang pengembang web dengan fokus pada menciptakan antarmuka pengguna yang menarik dan responsif. Temukan lebih banyak tentang karya-karya saya di sini"
-    />
-    <meta property="og:image" content="https://eki.my.id/Meta.png" />
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://eki.my.id/" />
-    <meta
-      property="twitter:title"
-      content="Eki Zulfar Rachman - Profil Pengembang Front-End Web"
-    />
-    <meta
-      property="twitter:description"
-      content="Selamat datang di website saya! Saya adalah Eki Zulfar Rachman, atau panggil saja saya 'EKI.' Saya adalah seorang pengembang web dengan fokus pada menciptakan antarmuka pengguna yang menarik dan responsif. Temukan lebih banyak tentang karya-karya saya di sini"
-    />
-    <meta property="twitter:image" content="https://eki.my.id/Meta.png" />
-    <meta name="theme-color" content="rgb(3,0,20)" />
-    <meta name="msapplication-navbutton-color" content="rgb(3,0,20)" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+    <!-- Background Animation -->
+    <div class="animated-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="grid-overlay"></div>
+    </div>
 
-    <title>Clarence Buenaflor Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-left" data-aos="fade-right" data-aos-delay="200">
+                    <div class="status-badge" data-aos="zoom-in" data-aos-delay="400">
+                        <span class="sparkle">✨</span>
+                        Ready to Innovate
+                    </div>
+                    
+                    <h1 class="main-title" data-aos="fade-up" data-aos-delay="600">
+                        <span class="title-line">FullStack</span>
+                        <span class="title-line gradient-text">Developer</span>
+                    </h1>
+                    
+                    <div class="typing-container" data-aos="fade-up" data-aos-delay="800">
+                        <span id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    
+                    <p class="description" data-aos="fade-up" data-aos-delay="1000">
+                        I made this portfolio to showcase my skills and projects as a FullStack Developer. 
+                        Explore my work and feel free to reach out for collaborations or inquiries.
+                    </p>
+                    
+                    <div class="tech-stack" data-aos="fade-up" data-aos-delay="1200">
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">Laravel</span>
+                        <span class="tech-item">Vue.js</span>
+                        <span class="tech-item">React.js</span>
+                        <span class="tech-item">TailwindCSS</span>
+                    </div>
+                    
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="1400">
+                        <a href="#portfolio" class="cta-btn primary">
+                            <span>Projects</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10M17 7H7v10"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="cta-btn secondary">
+                            <span>Contact</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="1600">
+                        <a href="https://github.com/Rensu2k" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/Rensu.Buenaflor/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="home-right" data-aos="fade-left" data-aos-delay="600">
+                    <div class="lottie-container">
+                        <div class="lottie-animation" id="lottie-animation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    <span class="sparkle">✨</span>
+                    Transforming ideas into digital experiences
+                    <span class="sparkle">✨</span>
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-left" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="about-title" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="gradient-text">Hello, I'm</span>
+                        <span class="name-text" data-aos="fade-right" data-aos-duration="1300">Clarence Buenaflor</span>
+                    </h2>
+                    
+                    <p class="about-description" data-aos="fade-right" data-aos-duration="1500">
+                        I'm a information technology student. I am passionate about creating digital experiences 
+                        that are enjoyable and always strive to provide the best solution in each project.
+                    </p>
+                    
+                    <div class="about-buttons" data-aos="fade-up" data-aos-duration="800">
+                        <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" class="btn-primary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            Download CV
+                        </a>
+                        <a href="#portfolio" class="btn-secondary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-right" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="/Photo.png" alt="Profile" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-grid" data-aos="fade-up" data-aos-duration="1200">
+                <div class="stat-card" data-aos="fade-right" data-aos-duration="1300">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="projects-count">0</span>
+                        <p class="stat-label">Total Projects</p>
+                        <p class="stat-description">Innovative web solutions crafted</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="certificates-count">0</span>
+                        <p class="stat-label">Certificates</p>
+                        <p class="stat-description">Professional skills validated</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card" data-aos="fade-left" data-aos-duration="1300">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" id="experience-years">3</span>
+                        <p class="stat-label">Years of Experience</p>
+                        <p class="stat-description">Continuous learning journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title">Portfolio Showcase</h2>
+                <p class="section-subtitle">
+                    Explore my journey through projects, certifications, and technical expertise. 
+                    Each section represents a milestone in my continuous learning path.
+                </p>
+            </div>
+            
+            <div class="portfolio-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="projects">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        Projects
+                    </button>
+                    <button class="tab-btn" data-tab="certificates">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                        Certificates
+                    </button>
+                    <button class="tab-btn" data-tab="techstack">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.78 0l-8-4A2 2 0 0 1 2 16.76V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/>
+                        </svg>
+                        Tech Stack
+                    </button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active" id="projects-panel">
+                        <div class="projects-grid" id="projects-grid">
+                            <!-- Projects will be loaded here -->
+                        </div>
+                        <div class="show-more-container">
+                            <button class="show-more-btn" id="show-more-projects" style="display: none;">
+                                <span>Show More</span>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="certificates-panel">
+                        <div class="certificates-grid" id="certificates-grid">
+                            <!-- Certificates will be loaded here -->
+                        </div>
+                        <div class="show-more-container">
+                            <button class="show-more-btn" id="show-more-certificates" style="display: none;">
+                                <span>Show More</span>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="techstack-panel">
+                        <div class="techstack-grid">
+                            <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="/html.svg" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="/css.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                                <img src="/javascript.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="/tailwind.svg" alt="Tailwind CSS">
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="/reactjs.svg" alt="ReactJS">
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                                <img src="/vite.svg" alt="Vite">
+                                <span>Vite</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="/nodejs.svg" alt="Node JS">
+                                <span>Node JS</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="/bootstrap.svg" alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                                <img src="/firebase.svg" alt="Firebase">
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src="/MUI.svg" alt="Material UI">
+                                <span>Material UI</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="/vercel.svg" alt="Vercel">
+                                <span>Vercel</span>
+                            </div>
+                            <div class="tech-item" data-aos="fade-up-left" data-aos-duration="1000">
+                                <img src="/SweetAlert.svg" alt="SweetAlert2">
+                                <span>SweetAlert2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">
+                    Got a question? Send me a message, and I'll get back to you soon.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="contact-form-header">
+                        <h3>Get in Touch</h3>
+                        <p>Have something to discuss? Send me a message and let's talk.</p>
+                        <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/ekizulfarrachman@gmail.com" method="POST">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                            <div class="input-container">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                            <div class="input-container">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                            <div class="input-container">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="400">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                    
+                    <div class="social-links-footer">
+                        <a href="https://github.com/Rensu2k" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/Rensu.Buenaflor/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="comments-container" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="comments-header">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3>Comments <span id="comments-count">(0)</span></h3>
+                    </div>
+                    
+                    <form class="comment-form" id="comment-form">
+                        <div class="form-group">
+                            <label>Name <span class="required">*</span></label>
+                            <input type="text" id="comment-name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Message <span class="required">*</span></label>
+                            <textarea id="comment-message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Profile Photo <span class="optional">(optional)</span></label>
+                            <div class="file-upload">
+                                <input type="file" id="comment-photo" accept="image/*">
+                                <div class="file-upload-content">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21,15 16,10 5,21"/>
+                                    </svg>
+                                    <span>Choose Profile Photo</span>
+                                </div>
+                                <p class="file-info">Max file size: 5MB</p>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="comment-submit-btn">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                            <span>Post Comment</span>
+                        </button>
+                    </form>
+                    
+                    <div class="comments-list" id="comments-list">
+                        <div class="no-comments">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <p>No comments yet. Start the conversation!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <hr class="footer-divider">
+            <p class="footer-text">
+                © 2023 <a href="#" class="footer-link">Clarence Buenaflor™</a>. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close" id="modal-close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <p id="modal-description"></p>
+                    <div class="modal-tech-stack" id="modal-tech-stack"></div>
+                    <div class="modal-features" id="modal-features"></div>
+                    <div class="modal-actions">
+                        <a id="modal-live-link" href="#" target="_blank" class="btn-primary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10M17 7H7v10"/>
+                            </svg>
+                            Live Demo
+                        </a>
+                        <a id="modal-github-link" href="#" target="_blank" class="btn-secondary">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="modal" id="certificate-modal">
+        <div class="modal-content certificate-modal-content">
+            <button class="modal-close certificate-modal-close" id="certificate-modal-close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <img id="certificate-modal-image" src="" alt="Certificate">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
 </html>
